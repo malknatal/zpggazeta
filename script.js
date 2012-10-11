@@ -30,13 +30,14 @@ function  changeUrlImage() {
 function pageLoad(url) {
             $.support.cors = true;          // настраиваем параметры
             $.mobile.allowCrossDomainPages = true;
-            alert("TEST");
+           
             var data = $.ajax({
                 url: url,
                 type: "GET",
                 dataType: "html",
                 async: false,
-                crossDomain: true
+                crossDomain: true,
+                cache:false
                 }).responseText;
           
            
@@ -96,7 +97,8 @@ function pageLoad(url) {
             type: "GET",
             dataType: "html",
             async: false,
-            crossDomain: true
+            crossDomain: true,
+            cache: false
         }).responseText;
 
 
