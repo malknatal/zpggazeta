@@ -1,0 +1,61 @@
+﻿ <head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+
+    <title>ЗПГ</title>
+
+	  <link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+
+
+      <script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"></script>
+      <script type="text/javascript" charset="utf-8" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="jquery.mobile-1.1.1.min.js"></script>
+<link rel="stylesheet" href="jquery.mobile-1.1.1.min.css"  type="text/css" media="screen" title="no title" charset="utf-8"/>
+      <script type="text/javascript">
+
+
+          document.addEventListener("deviceready", onDeviceReady, false);
+
+          // once the device ready event fires, you can safely do your thing! -jm
+          function onDeviceReady() {
+              document.getElementById("welcomeMsg").innerHTML += "Cordova is ready! version=" + window.device.cordova;
+              console.log("onDeviceReady. You should see this message in Visual Studio's output window.");
+
+          }
+
+      </script>
+  <script type="text/javascript" charset="utf-8" src="script.js"></script>
+  </head>
+  <body>
+    <div data-role="page">
+
+	<div>
+		<h1>ЗАЩИТА ПРАВ ГРАЖДАН</h1>
+        <div id="welcomeMsg"></div>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	<p>Архангельская региональная общественная организация «Информационный центр «Защита прав граждан»</p>
+
+    <p>Адрес: г. Архангельск, ул. Садовая, 53, каб. 11. <br />
+    Телефон: 64-03-48</p>
+
+    <p>Часы работы: с 9 до 17 часов.</p>
+
+ 
+    <p>Общественно-информационная рекламная газета «Защита прав граждан»</p>
+    <p>Адрес: г. Архангельск, ул. Садовая, 53, каб. 8<br />
+    Телефон: 64-09-61</p>
+    <ul data-role="listview" data-inset="false" data-filter="false">
+	<li><a href="#" onclick="pageLoad('http://zpg29.ru/index.php?id=52');" rel="external">Свежий номер газеты</a></li>
+	<li><a href="arhiv.html">Архив номеров</a></li>
+	<li><a href="zpg.html">Гражданско-правовая защита</a></li>
+</ul>	
+	</div><!-- /content -->
+
+</div><!-- /page -->
+</body>
+
+
+
+

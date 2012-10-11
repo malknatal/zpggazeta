@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License. 
+-->
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0;" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+
+    <title>Cordova WP7</title>
+
+	  <link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+
+
+      <script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"></script>
+      <script type="text/javascript" charset="utf-8" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="jquery.mobile-1.1.1.min.js"></script>
+<link rel="stylesheet" href="jquery.mobile-1.1.1.min.css"  type="text/css" media="screen" title="no title" charset="utf-8"/>
+      <script type="text/javascript">
+ 
+
+        document.addEventListener("deviceready",onDeviceReady,false);
+
+        // once the device ready event fires, you can safely do your thing! -jm
+        function onDeviceReady()
+        {
+            document.getElementById("welcomeMsg").innerHTML += "Cordova is ready! version=" + window.device.cordova;
+            console.log("onDeviceReady. You should see this message in Visual Studio's output window.");
+
+        }
+
+      </script>
+  <script type="text/javascript" charset="utf-8" src="script.js"></script>
+  </head>
+  <body>
+    <div>
+
+	<div>
+		<h1>ЗАЩИТА ПРАВ ГРАЖДАН</h1>
+        <div id="welcomeMsg" style="display:none"></div>
+         <div id="page" style="display:block"></div>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<ul data-role="listview" data-inset="false" data-filter="false">
+	<li><a href="1_2012.html">№1 (30)</a></li>
+	<li><a href="2_2012.html">№2 (31)</a></li>
+	<li><a href="3_2012.html">№3 (32)</a></li>
+	<li><a href="4_2012.html">№4 (33)</a></li>
+    <li><a href="5_2012.html">№5 (34)</a></li>
+    <li><a href="6_2012.html">№6 (35)</a></li>
+    <li><a href="7_2012.html">№7 (36)</a></li>
+	<li><a href="8_2012.html">№8 (37)</a></li>
+	<li><a href="9_2012.html">№9 (38)</a></li>
+	<li><a href="10_2012.html">№10 (39)</a></li>
+    <li><a href="11_2012.html">№11 (40)</a></li>
+    <li><a href="12_2012.html">№12 (41)</a></li>
+    <li><a href="13_2012.html">№13 (42)</a></li>
+</ul>	
+	</div><!-- /content -->
+
+</div><!-- /page -->
+  </body>
+</html>

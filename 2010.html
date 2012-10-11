@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License. 
+-->
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0;" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+
+    <title>Cordova WP7</title>
+
+	  <link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+
+
+      <script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"></script>
+      <script type="text/javascript" charset="utf-8" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="jquery.mobile-1.1.1.min.js"></script>
+<link rel="stylesheet" href="jquery.mobile-1.1.1.min.css"  type="text/css" media="screen" title="no title" charset="utf-8"/>
+      <script type="text/javascript">
+ 
+
+        document.addEventListener("deviceready",onDeviceReady,false);
+
+        // once the device ready event fires, you can safely do your thing! -jm
+        function onDeviceReady()
+        {
+            document.getElementById("welcomeMsg").innerHTML += "Cordova is ready! version=" + window.device.cordova;
+            console.log("onDeviceReady. You should see this message in Visual Studio's output window.");
+
+        }
+
+      </script>
+  <script type="text/javascript" charset="utf-8" src="script.js"></script>
+  </head>
+  <body>
+    <div>
+
+	<div>
+		<h1>ЗАЩИТА ПРАВ ГРАЖДАН</h1>
+         <div id="welcomeMsg1" style="display:none"></div>
+            <div id="page1" style="display:block"></div>
+         <div id="articles1" style="display:block" data-role="content"></div>
+        
+         
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<ul data-role="listview" data-inset="false" data-filter="false">
+	<li><a href="#" onclick="pageLoad_1('http://zpg29.ru/index.php?id=1105');" rel="external">№1 </a></li>
+	<li><a href="#" onclick="pageLoad_1('http://zpg29.ru/index.php?id=1130');" rel="external">№2 </a></li>
+	<li><a href="#" onclick="pageLoad_1('http://zpg29.ru/index.php?id=1143');" rel="external">№3 </a></li>
+	<li><a href="#" onclick="pageLoad_1('http://zpg29.ru/index.php?id=1161');" rel="external">№4 </a></li>
+    <li><a href="#" onclick="pageLoad_1('http://zpg29.ru/index.php?id=1175');" rel="external">№5 </a></li>
+    <li><a href="#" onclick="pageLoad_1('http://zpg29.ru/index.php?id=1188');" rel="external">№6 </a></li>
+    <li><a href="#" onclick="pageLoad_1('http://zpg29.ru/index.php?id=1199');" rel="external">№7 </a></li>
+	<li><a href="#" onclick="pageLoad_1('http://zpg29.ru/index.php?id=1212');" rel="external">№8 </a></li>
+	<li><a href="#" onclick="pageLoad_1('http://zpg29.ru/index.php?id=1222');" rel="external">№9 </a></li>
+	<li><a href="#" onclick="pageLoad_1('http://zpg29.ru/index.php?id=1234');" rel="external">№10 </a></li>
+    <li><a href="#" onclick="pageLoad_1('http://zpg29.ru/index.php?id=1244');" rel="external">№11 </a></li>
+    <li><a href="#" onclick="pageLoad_1('http://zpg29.ru/index.php?id=1263');" rel="external">№1 </a></li>
+    <li><a href="#" onclick="pageLoad_1('http://zpg29.ru/index.php?id=1276');" rel="external">№2 (02)</a></li>
+    <li><a href="#" onclick="pageLoad_1('http://zpg29.ru/index.php?id=1289');" rel="external">№3 (03)</a></li>
+    <li><a href="#" onclick="pageLoad_1('http://zpg29.ru/index.php?id=1296');" rel="external">№4 (04)</a></li>
+    <li><a href="#" onclick="pageLoad_1('http://zpg29.ru/index.php?id=1304');" rel="external">№5 (05)</a></li>
+    <li><a href="#" onclick="pageLoad_1('http://zpg29.ru/index.php?id=1312');" rel="external">№6 (06)</a></li>
+    <li><a href="#" onclick="pageLoad_1('http://zpg29.ru/index.php?id=1322');" rel="external">№7 (07)</a></li>
+    <li><a href="#" onclick="pageLoad_1('http://zpg29.ru/index.php?id=1334');" rel="external">№8 (08)</a></li>
+    <li><a href="#" onclick="pageLoad_1('http://zpg29.ru/index.php?id=1346');" rel="external">№9 (09)</a></li>
+</ul>	
+	</div><!-- /content -->
+
+</div><!-- /page -->
+  </body>
+</html>
